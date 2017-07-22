@@ -1,0 +1,20 @@
+\set QUIET 1
+
+\pset null (null)
+\set COMP_KEYWORD_CASE upper
+\set HISTCONTROL ignoreboth
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTSIZE 1000
+\set ON_ERROR_ROLLBACK interactive
+\set PROMPT1 '%[%033[1;94m%][%[%033[39m%]%n@%[%033[93m%]%m/%/%[%033[94m%]]%[%033[m%] %R%# '
+\set PROMPT2 '%R%# '
+\set VERBOSITY verbose
+\x auto
+
+SET plpgsql.extra_errors = 'all';
+SET plpgsql.extra_warnings = 'all';
+
+-- Turn on timing last to avoid printing out timing for the above commands.
+\timing on
+
+\unset QUIET
