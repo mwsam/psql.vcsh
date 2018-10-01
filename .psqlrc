@@ -1,6 +1,6 @@
 \set QUIET 1
 
-\pset null (null)
+\pset null (NULL)
 \set COMP_KEYWORD_CASE upper
 \set HISTCONTROL ignoreboth
 \set HISTFILE ~/.psql_history- :DBNAME
